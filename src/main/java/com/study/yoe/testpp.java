@@ -4,4 +4,5 @@ package com.study.yoe;/*
 
 public class testpp {
     String nbm;
+    Integer opopopop;
 }
