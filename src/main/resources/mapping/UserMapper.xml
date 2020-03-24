@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.study.yoe.mapper.UserMapper">
+
+
+    <select id="findById" parameterType="int"  resultType="User">
+        select * from s_user where id = #{id}
+    </select>
+
+    <select id="find" resultType="User">
+        select * from s_user
+    </select>
+
+    <insert id="add" parameterType="User">
+        <selectKey resultType="int" keyProperty="id" order="AFTER">
+            select last_insert_id()
+        </selectKey>
+        insert into s_user (name,c_time)
+        values(#{name},#{createdtime})
+    </insert>
+
+    <delete id="delete" parameterType="int">
+        delete from s_user
+        where id=#{id}
+    </delete>
+
+    <update id="update" parameterType="User">
+        update s_user set name=#{name},c_time=#{createdtime}
+        where id= #{id}
+    </update>
+
+</mapper>
