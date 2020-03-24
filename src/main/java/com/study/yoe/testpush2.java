@@ -3,5 +3,6 @@ package com.study.yoe;/*
  */
 
 public class testpush2 {
-    int abc3;
+    int ab;
+    int suhsdb;
 }

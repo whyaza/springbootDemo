@@ -3,5 +3,5 @@ package com.study.yoe;/*
  */
 
 public class testpush {
-    int abc;
+    int abcsss;
 }

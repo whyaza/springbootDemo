@@ -4,5 +4,8 @@ package com.study.yoe;/*
 
 public class testpp {
     String nbm;
-    Integer opopopop;
+
+    public void aidbh(){
+        System.out.println("刚拉下来的翔，热乎乎...");
+    }
 }
